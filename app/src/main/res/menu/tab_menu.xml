@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/newPlaylist"
+        android:icon="@drawable/ic_playlist_add_black_24dp"
+        android:title="New Playlist"
+        app:showAsAction="never"
+          />
+    <item
+        android:id="@+id/favourites"
+        android:icon="@drawable/ic_group_add_black_24dp"
+        android:title="Favourites"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Homesettings"
+        android:icon="@drawable/ic_group_add_black_24dp"
+        android:title="Settings"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/signout"
+        android:icon="@drawable/ic_group_add_black_24dp"
+        android:title="Sign Out"
+        app:showAsAction="never"
+        />
+
+
+
+</menu>

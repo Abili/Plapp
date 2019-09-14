@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_margin="10dp"
+        android:background="@drawable/round_btn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/new_playlist_userpic_playlistmodel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/profileimage_24dp" />
+
+            <TextView
+                android:id="@+id/playlistname_new_playlist_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="playlist 1"
+                android:textColor="@android:color/holo_orange_dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="80dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/username_new_playlist_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user 1"
+                android:textColor="@android:color/holo_orange_dark" />
+
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_gravity="right|center"
+           android:layout_marginRight="120dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/recommended" />
+
+           <TextView
+               android:id="@+id/recommended_new_palaylist_model"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="1"
+               android:textColor="@android:color/holo_orange_dark"
+               android:layout_gravity="right|bottom"/>
+       </LinearLayout>
+
+        <ImageView
+            android:id="@+id/trash"
+            android:layout_margin="10dp"
+            android:layout_gravity="right|center"
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/delete"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/playlistCount_new_palaylist_model"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_margin="10dp"
+            android:layout_gravity="right|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 Songs"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

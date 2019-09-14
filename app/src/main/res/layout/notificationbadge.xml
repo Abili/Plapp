@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Adding Badge (Item Count)/Notification Count to Android Button-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/badge_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="65dip"
+                android:layout_height="65dip"
+                android:background="@drawable/ic_check_circle_black_24dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/badge_notification_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/relative_layout"
+            android:background="@drawable/badge_item_count"
+            android:text="27"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/badge2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/badge_layout1">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/myButton1"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:background="@drawable/ic_check_circle_black_24dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/badge_notification_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/badge_item_count"
+            android:text="10"
+
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/badge3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/badge2">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/myButton3"
+                android:layout_width="65dip"
+                android:layout_height="65dip"
+                android:background="@drawable/ic_check_circle_black_24dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/badge_notification_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/relative_layout2"
+            android:background="@drawable/badge_item_count"
+            android:text="55"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/badge4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/badge_layout1"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/myButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="65dip"
+                android:background="#72b332"
+                android:elevation="4dp"
+                android:paddingLeft="50dp"
+                app:fabSize="normal"
+                android:paddingRight="50dp"
+                android:text="Notification Badge Android"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/badge_notification_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/relative_layout3"
+            android:background="@drawable/badge_item_count"
+            android:text="10"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

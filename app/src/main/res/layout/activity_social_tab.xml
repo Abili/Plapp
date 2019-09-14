@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SocialTab"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileLinearLayouts">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/posterpic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profileimage_24dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:id="@+id/socialTabusername"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4hrs ago"
+                android:id="@+id/time_ofposting"
+               android:layout_alignParentRight="true"
+                />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content"
+        android:text="caption"
+        android:id="@+id/socialTabCaption"
+        android:layout_below="@id/profileLinearLayouts"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/PlistRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/socialTabCaption"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/PlistRecycler"
+        android:id="@+id/reactions"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/badge2">
+
+            <RelativeLayout
+                android:id="@+id/comment_relative_layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/comment_Button3"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/comment" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/commentcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/relative_layout2"
+                android:text="100"
+                android:layout_centerInParent="true"
+                android:textColor="#Ffff8800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal"
+            android:id="@+id/rate_linLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relative_layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/rate_Button3"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/rate_24dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/rate_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/relative_layout2"
+                android:text="100"
+                android:layout_centerInParent="true"
+                android:textColor="#Ffff8800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal"
+            android:id="@+id/like_LinLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/badge2">
+
+            <RelativeLayout
+                android:id="@+id/Like_relative_layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/like_Button3"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/like" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/likecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/relative_layout2"
+                android:text="100"
+                android:layout_centerInParent="true"
+                android:textColor="#Ffff8800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal"
+            android:id="@+id/share_LinLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/badge2">
+
+            <RelativeLayout
+                android:id="@+id/share_Rlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/share_btn"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/ic_share_black_24dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="4dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:src="@color/transparent_black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:text="@string/username"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:text="@string/playlisname"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recommended_song_count"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/overflow"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+</RelativeLayout>

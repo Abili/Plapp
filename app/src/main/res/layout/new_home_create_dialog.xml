@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:elevation="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_create_tb">
+            <TextView
+
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create new Playlist"/>
+        </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:background="@drawable/round_btn"
+        android:layout_below="@+id/new_create_tb"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:id="@+id/new_home_Edt_playlistname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="playlist name"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_gravity=""
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:id="@+id/new_home_cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <TextView
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:id="@+id/new_home_Pl_createBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:text="Create"
+            android:textColor="@android:color/holo_orange_dark" />
+
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

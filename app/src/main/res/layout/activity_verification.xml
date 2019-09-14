@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="127dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="120dp"
+            android:id="@+id/codesEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="@android:color/holo_orange_dark"
+            android:hint="@string/verficationhint"
+            android:inputType="number" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/verifyBtn"
+        android:text="Verify"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:background="@drawable/round_btn"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="312dp"
+        android:layout_height="107dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/iconplap" />
+
+</RelativeLayout>

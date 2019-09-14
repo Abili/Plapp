@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.raisac.plapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/launcher_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:windowSoftInputMode="adjustPan|adjustResize">
+        <activity android:name=".ChangePhotoDialog"></activity>
+        <activity android:name=".LoadSongs" />
+        <activity android:name=".Profile">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SongLists" />
+        <activity android:name=".Verification" />
+        <activity android:name=".Settings_Profile" />
+        <activity android:name=".Register" />
+        <activity android:name=".Mytrys" />
+        <activity android:name=".New_homePage" />
+        <activity android:name=".UpdateTimeLine" />
+        <activity android:name=".SocialTab" />
+        <activity android:name=".SocialPageRecycler" />
+        <activity android:name=".CreatePlayList" />
+        <activity android:name=".compareSongs.CompareSongs" />
+        <activity android:name=".Playlist_model" />
+        <activity android:name=".Settings" />
+        <activity android:name=".PlayListSongs" />
+        <activity android:name=".DisplayPlaylist" />
+        <activity android:name=".Contacts" />
+        <activity android:name=".UploadAndReadSongs" />
+        <activity
+            android:name=".Nav"
+            android:label="@string/title_activity_nav"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".SongModel"
+            android:label="@string/title_activity_song_model"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+</manifest>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Toolbar
+        android:id="@+id/userhome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/username_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textColor="#ffff8800" />
+
+    </Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="30dp"
+        android:elevation="10dp"
+        android:id="@+id/userhome_profile"
+        android:layout_below="@+id/userhome_toolbar"
+        android:layout_width="100dp"
+        android:layout_gravity="bottom"
+        android:layout_height="100dp"
+        android:src="@drawable/profileimage_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userhome_toolbar" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/userhe_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="413dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="154dp">
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/userhome_about"
+        android:textSize="18dp"
+        android:elevation="10dp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userhe_cardview"
+        android:layout_toEndOf="@+id/userhome_profile"
+        android:text="About" />
+
+    <TextView
+        android:textSize="18dp"
+        android:elevation="10dp"
+        android:id="@+id/userhome_media"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userhe_cardview"
+        android:layout_toEndOf="@+id/userhome_about"
+        android:text="Media"
+        android:layout_toRightOf="@+id/userhome_about"/>
+
+    <TextView
+        android:id="@+id/userhme_media"
+        android:textSize="18dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userhe_cardview"
+        android:layout_toEndOf="@+id/userhome_media"
+        android:text="Buddies"
+        android:layout_toRightOf="@+id/userhome_media"/>
+
+    <TextView
+        android:id="@+id/userhome_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userhe_cardview"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/userhme_media"
+        android:layout_toRightOf="@+id/userhme_media"
+        android:elevation="10dp"
+        android:text="Hot"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/userhome_notify_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="20" />
+
+        <ImageView
+            android:id="@+id/userhome_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/notifications" />
+
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/userhome_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_menu_black_24d" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/userhome_messages_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="20" />
+
+        <ImageView
+            android:id="@+id/userhome_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_message_black_24dp" />
+
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:id="@+id/userhome_recycler"
+        android:layout_below="@+id/userhome_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

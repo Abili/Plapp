@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@android:color/holo_orange_dark"
+        android:id="@+id/toolbar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Profile"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/toolbar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:elevation="4dp"
+            android:id="@+id/registerProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/profileimage_24dp"
+            tools:ignore="VectorDrawableCompat">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <EditText
+            android:layout_marginBottom="20dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/pen_edit"
+            android:padding="20dp"
+            android:id="@+id/settings_edtUsername"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:hint="user name"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+<Button
+    android:layout_gravity="bottom"
+        android:id="@+id/createaccount_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:textColor="#ffff8800"
+        android:text="create Account"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
+
+</android.support.v7.widget.CardView>
+</RelativeLayout>

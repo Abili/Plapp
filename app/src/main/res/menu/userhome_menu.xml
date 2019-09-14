@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_online"
+        android:title="Online"
+        app:showAsAction="never">Friends Onine
+    </item>
+
+    <item
+
+        android:id="@+id/menu_Media"
+        android:title="Media"
+        app:showAsAction="never">Media
+    </item>
+    <item
+
+        android:id="@+id/menu_notificaton"
+        android:title="Notifications"
+        app:showAsAction="never">Notifications
+    </item>
+
+    <item
+        android:id="@+id/menu_hitups"
+        android:icon="@drawable/ic_message_black_24dp"
+        android:title="Hit ups"
+        app:showAsAction="never">>
+    </item>
+
+
+    <item
+        android:id="@+id/menu_settings"
+        android:title="settings"
+        app:showAsAction="never">settings
+
+    </item>
+
+    <item
+        android:id="@+id/menu_signout"
+        android:title="sign out"
+        app:showAsAction="never">SignOut>
+
+
+    </item>
+</menu>
